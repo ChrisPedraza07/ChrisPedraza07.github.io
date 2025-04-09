@@ -1,99 +1,140 @@
-.row {
-background-color: rgb(223, 240, 240);
-padding-top: 1.5rem;
-padding-bottom: 1.5rem;
-display:grid;
-   
-font-family: 'Aptos', sans-serif;
+.navbar {
+    background-color: #3A6EA5 !important;
 }
-img {
-    max-width: 100%;  /* Ensures the image scales down if needed */
-    height: auto;     /* Maintains the aspect ratio */
-    display: block;   /* Removes extra spacing under images */
-    margin: 0 auto;   /* Centers the image */
-}
+    
 
-#header{
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 14px 16px;
+    font-size: 1.2rem;
+    
+}
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
-  
+    width: 100%; /* ensures the spacing fills the nav bar */
     text-align: center;
 }
-#contact {
-    display: flex;
-    flex-direction: column; /* Stack items */
-    align-items: center; /* Center content */
-    text-align: center;
-    background-color: #f1f1f1;
-    padding: 20px;
+.navbar-nav .nav-link:hover {
+    background-color: #AED4F1;
+    color: #1F2D3D !important;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: auto;
-    overflow:visible;}
-
-#contact h2 {
-
-    color: #333;
-    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact ul li {
-  
-    margin: 5px 0;
-    color: #555;
-    display: flex;
-    align-items: center;
-}
-
-#contact ul li i {
-    margin-right: 10px;
-    color: #007bff; /* Blue icons */
-}
-nav {
-    background-color: #333; /* Darker background for contrast */
-    display: flex;
-    justify-content: center; /* Center content */
-    width: 100%;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Keeps navbar at the top */
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px; /* Space between items */
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-
-    color: white;
+.navbar-brand {
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: rgb(183, 225, 192);
-    color: #333;
-    transform: scale(1.1);
+#hamburgerButton {
+    background-color: #3A6EA5 !important;
+    color: white !important;
+    accent-color: white !important; /* For modern browsers */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding for better touch target */
+    cursor: pointer; /* Change cursor to pointer */
 }
-#firstSection{
-    padding-top:100px;
+#hamburgerButton .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+/* Custom Styles */
+.ribbon {
+    height: 12px;
+   background-color:  #599acf;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    
+    margin: 0 auto;
+    display: block;
+}
+h1, h2, h3, h5 {
+    color: #ff6700 !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.297); /* subtle shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#about img{ 
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+#home, #about, #portfolio{
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+#home
+{
+    text-align: center;
+    justify-content: center;
+}
+#about p{
+    text-indent: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#cSection {
+    background-color: #3A6EA5 !important;
+    color: white !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; /* ensures the spacing fills the nav bar */
+    text-align: center;
+}
+
+#cSection b{
+    color: white !important;
+    font-size: 1.2rem;
+    margin: 0 10px;
+  
+    text-decoration: underline;
+}
+#cSection i {
+    color: #f1c40e;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+    #cSection a{
+        color: white !important;
+        text-decoration: none;
+    }
+#cSection a:hover {
+    background-color: #AED4F1;
+    color: #1F2D3D !important;
+    border-radius: 8px;
+    padding: 5px 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.footer {
+    background-color:#599acf;
+    color: white !important;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
