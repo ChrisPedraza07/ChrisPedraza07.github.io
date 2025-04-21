@@ -176,7 +176,7 @@ h1{
     transition: transform 0.3s ease;
 }
 
-#textCard:hover, #imageCard:hover {
+#textCard:hover, #introCard:hover {
     
     transform: scale(1.05) translateY(-5px);
     
@@ -185,7 +185,7 @@ h1{
                                                                     /*Project Page Styling*/
 
 .project-card-DC {
-    background-color: #66ca85;
+    background-color: #4c9563;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -250,7 +250,7 @@ iframe {
   
   /* Unique Colors */
   .green-card {
-    background-color: #4c9563;
+    background-color:  #4c9563;
   }
   
   .purple-card {
