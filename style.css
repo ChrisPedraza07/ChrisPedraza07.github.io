@@ -152,7 +152,7 @@ h1{
 #textCard p {
     text-indent: 40px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 #introCard {
@@ -161,7 +161,7 @@ h1{
     color: white;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    margin-left: 80px;
+    margin-left: 20px;
     aspect-ratio: 1 / 1; /* Makes it a square */
     justify-content: center;
 }
@@ -270,6 +270,7 @@ iframe {
     text-decoration: none;
     color: white !important;
     font-weight: 500;
+    font-size: 1.2rem;
     font-family: "Bagel Fat One", system-ui;
     padding: 8px 12px;
     transition: color 0.3s ease;
@@ -280,7 +281,7 @@ iframe {
   
   .contact-card i {
     color: white !important;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding-right: 5px;
   }
   
