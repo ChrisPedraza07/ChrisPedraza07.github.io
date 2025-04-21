@@ -1,50 +1,48 @@
-.navbar {
-    background-color: #3A6EA5 !important;
-}
-    
 
-.navbar-nav .nav-link {
+                                                                 /*fonts imported from google fonts*/
+.bodoni-moda-font {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with desired weight, e.g., 400 for normal */
+  font-style: normal;
+}
+.modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rock-3d-regular {
+    font-family: "Rock 3D", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+                                                                            /*Global Styles*/
+#content {
+ 
+    background-color: #1F2D3D !important;
     color: white !important;
-    padding: 14px 16px;
-    font-size: 1.2rem;
-    
-}
-.navbar-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%; /* ensures the spacing fills the nav bar */
-    text-align: center;
-}
-.navbar-nav .nav-link:hover {
-    background-color: #AED4F1;
-    color: #1F2D3D !important;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out;
-}
-.navbar-brand {
-    color: white !important;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 100px; /* Space for navbar */
+    justify-content: center;
 
-#hamburgerButton {
-    background-color: #3A6EA5 !important;
-    color: white !important;
-    accent-color: white !important; /* For modern browsers */
-    border: none; /* Remove border */
-    padding: 10px; /* Add padding for better touch target */
-    cursor: pointer; /* Change cursor to pointer */
 }
-#hamburgerButton .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.ms-3{
+    background-color: aliceblue !important;
 }
-
-/* Custom Styles */
 .ribbon {
     height: 12px;
    background-color:  #599acf;
+}
+body{
+    background-color: #1F2D3D !important;
+  
 }
 
 img {
@@ -56,85 +54,311 @@ img {
 iframe{
     width: 100%;
     height: 500px;
-    
+    border-radius: 8px;
     margin: 0 auto;
     display: block;
 }
-h1, h2, h3, h5 {
-    color: #ff6700 !important;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.297); /* subtle shadow */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1{
+    color:white !important;
+   
+    font-family: "Bagel Fat One", system-ui;
     font-weight: 700;
     letter-spacing: 0.5px;
-}
-
-#about img{ 
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px;
-    display: inline-block;
-    padding-bottom: 10px;
+    text-align:center;
 
 }
-#home, #about, #portfolio{
+ h2,h3,h5{
+    color:white !important;
+  padding-bottom: 10px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align:center
+}
+#about, #portfolio, #gallery{
     padding-left: 25px;
-    padding-right: 15px;
+    padding-right: 25px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
 }
-#home
-{
+
+#home {
     text-align: center;
     justify-content: center;
 }
-#about p{
-    text-indent: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+
+
+
+
+                                                                        /* Navbar Styling */
+.modern-navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 }
 
-#cSection {
-    background-color: #3A6EA5 !important;
-    color: white !important;
+.modern-nav-items {
+    list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%; /* ensures the spacing fills the nav bar */
-    text-align: center;
-}
-
-#cSection b{
-    color: white !important;
-    font-size: 1.2rem;
-    margin: 0 10px;
-  
-    text-decoration: underline;
-}
-#cSection i {
-    color: #f1c40e;
-    text-align: center;
-    font-size: 1.2rem;
-
-}
-    #cSection a{
-        color: white !important;
-        text-decoration: none;
-    }
-#cSection a:hover {
-    background-color: #AED4F1;
-    color: #1F2D3D !important;
-    border-radius: 8px;
-    padding: 5px 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-.footer {
-    background-color:#599acf;
-    color: white !important;
-    text-align: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
     position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
+.modern-nav-items li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-family: "Bagel Fat One", system-ui;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.modern-nav-items li a:hover {
+    color:#D6E5BD;
+}
+
+.highlight {
+    position: absolute;
+    height: 100%;
+    background: #353a3f;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    z-index: 0;
+    width: 0;
+    left: 0;
+}
+                                                                                /* About Page Styling */
+#textCard {
+    padding: 10px 5px 5px 5px;
+    background-color: #4c9563;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    margin: 10% auto;
+    max-width: 850px;
+
+}
+#textCard p {
+    text-indent: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#introCard {
+    padding: 10px 5px 5px 5px;
+    background-color: #3A6EA5;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    margin-left: 80px;
+    aspect-ratio: 1 / 1; /* Makes it a square */
+    justify-content: center;
+}
+
+#introImage{
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#textCard:hover, #imageCard:hover {
+    
+    transform: scale(1.05) translateY(-5px);
+    
+}
+
+                                                                    /*Project Page Styling*/
+
+.project-card-DC {
+    background-color: #66ca85;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.project-card-FE {
+    background-color: #ba88b4;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.project-card-BA {
+    background-color: #778eae;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.project-card-BA:hover, .project-card-FE:hover, .project-card-DC:hover {
+    transform: translateY(-5px);
+}
+                                                                            /*Contact Page Styling*/
+
+
+/* Contact Card Styling */
+.contact-card {
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    aspect-ratio: 1 / 1; /* Makes it a square */
+    height: auto; /* Keeps it responsive */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px; /* Optional: Set a max width for larger screens */
+    max-height: 500px; /* Optional: Set a max height for larger screens */
+  }
+  
+  /* Unique Colors */
+  .green-card {
+    background-color: #4c9563;
+  }
+  
+  .purple-card {
+    background-color: #ba88b4;
+  }
+  
+  .blue-card {
+    background-color: #778eae;
+  }
+  
+  .linkedin-card {
+    background-color: #3A6EA5;
+  }
+  
+  /* Card Content Styling */
+  .contact-card a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 500;
+    font-family: "Bagel Fat One", system-ui;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .contact-card i {
+    color: white !important;
+    font-size: 2.5rem;
+    padding-right: 5px;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Column alignment helper (Bootstrap override) */
+  .col-sm-6.col-md-4 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1400px) {
+    #textCard {
+        background-color: #4c9563;
+        color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        margin: 10% auto;
+        max-width: 400px;
+    
+    }
+  }
+
+                                                                            /* Mobile Settings*/
+@media (max-width: 768px) {
+    #home{
+        padding-top:30px;
+    }
+    #introCard {
+        background-color: #3A6EA5;
+        color: white;
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        margin-left: 5px;
+        margin-right: 5px;
+        aspect-ratio: 1 / 1; /* Makes it a square */
+        justify-content: center;
+    }
+    #content {
+ 
+        background-color: #1F2D3D !important;
+        color: white !important;
+        height: 100vh; /* Full height of the viewport */
+        padding-top: 100px; /* Space for navbar */
+    
+    }
+
+    #about p{
+        text-indent: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    
+    }
+    #textCard {
+        background-color: #4c9563;
+        color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        margin: 10% auto;
+        max-width: 450px;
+    
+    }
+    
+    .project-card-DC {
+        margin-top: 10px;
+      margin-bottom:10px ;
+    }
+    .project-card-FE {
+      margin-top: 10px;
+      margin-bottom:10px ;
+
+        
+    }
+    .project-card-BA {
+        margin-top: 10px;
+        margin-bottom:10px ;
+    }
+}

@@ -12,146 +12,71 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Modak&family=Rock+3D&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="modern-navbar">
+        <ul class="modern-nav-items">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <span class="highlight"></span>
+        </ul>
+      </nav>
 
-            <button class="navbar-toggler" id="hamburgerButton" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-header">
-
-                    <a class="navbar-brand" href="#">Chris Pedraza</a>
-                  
-                </div>
-
-                <ul class="nav navbar-nav">
-
-               
-                    <li class="nav-item"><a class="nav-link" href=#about>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href=#portfolio>Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href=#cSection>Contact</a></li>
-
-            </div>
+<div class="container-fluid" id="content">
 
 
-        </div>
-
-    </nav>
-
-
-
-    <div class="row" id="home">
-        <div class="col-md-12">
-          
-            <h1>Welcome to my Portfolio</h1>
-          
             
              
-       </div>
+     
     </div>
-    <hr>
-    <div class="row" id="about">
-        <div class="col-md-12">
-            <h3>About Me</h3>  <img src="https://s6.gifyu.com/images/bMUZz.jpg" alt="Chris Pedraza" class="img-fluid">
-            <p> Hi! My name is Chris Pedraza, and I'm a student at Boise State University pursuing a B.A. in Games,
-                Interactive Media, and Mobile. I specialize in 2D/3D art and animation for media and game development,
-                with a passion for crafting engaging visual experiences across digital platforms like games, websites,
-                apps, VR, and AR.
-
-                I love injecting a sense of humor and whimsy into my work—whether it's designing quirky characters or
-                creating playful animations. I’m skilled in Blender, where I can model, rig, and animate characters from
-                scratch. I also have hands-on experience developing games in Unity using C#, including a solo-developed
-                2D platformer and a 3D local co-op game. In addition, I’ve collaborated on group projects focused on AR
-                and VR, which strengthened my teamwork and creative problem-solving skills.
-
-                Beyond game development, I’m proficient in HTML, Bootstrap, and CSS, allowing me to build clean,
-                responsive web experiences that blend visual design with functionality.
-
-                After graduation, I’m excited to jump into the creative industry—whether it’s in games, interactive
-                media, or digital art—and continue telling stories through animation and design.</p>
+  
+      
+           
+      
+          </div>
         </div>
-
-    </div>
+      </div>
+      
+     
     <hr>
-    <div class="row" id="portfolio">
-        <div class="col-md-12">
-            <h3>Portfolio</h3>
-            <p>Here are some of the projects I have worked on.</p>
+    
+    <hr>
+
+<div id="collapseBottom">
+    <button id="toggleContact" title="chev" class="btn btn-light text-center" type="button">
+        <i class="fas fa-chevron-up" id="chevronIcon"></i>
+    </button>
+    
+    <div id="contactCollapse" class="hidden">
+        <div class="container-fluid" id="cSection">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Donut Cop</h5>
-                    <p>A 2D platformer where you play as a cop turned donut who's hunting down his disgruntled
-                        ex-partner for betraying him. All assets were hand drawn and animated in Unity. This was my
-                        first solo project/game that I made in Unity. I learned a lot about game development and how to use Unity
-                        to make a game. I also learned how to use C# to program the game mechanics.
-                    </p>
-                    <iframe src="https://www.youtube.com/embed/FnE3mpM7nAY?si=p5zxawLLPx-amNHF"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                <b>Contact Me</b>
+                <div class="col-12 col-md-3">
+                    <p><a><i class="fas fa-user"></i> Chris Pedraza</a></p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Project 2</h5>
-                    <p>Project 2 Description</p>
-                    <iframe src="https://www.youtube.com/embed/Lbmc-O3cinU?si=9pEsA1B0rKs-z5bh" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                <div class="col-12 col-md-3">
+                    <p><a><i class="fas fa-phone"></i> (509) 301-4266</a></p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Project 3</h5>
-                    <p>Project 3 Description</p>
-                    <img src="images/Project3.png" alt="Project 3">
-
+                <div class="col-12 col-md-3">
+                    <p><a href="mailto:chris.pedraza@gmail.com?subject=Hello&body=I wanted to reach out...">
+                        <i class="fas fa-envelope"></i> Email Me</a></p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p><a href="https://www.linkedin.com/in/chris-pedraza" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i> LinkedIn</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid" id='cSection'>
-        <div class="row align-items-center">
-            <b>Contact Me</b>
-            <div class="col-12 col-md-3">
-                <p>
-                    <a>
-
-                        <i class="fas fa-user"></i> Chris Pedraza
-
-                    </a>
-                </p>
-            </div>
-            <div class="col-12 col-md-3">
-                <p>
-                    <a> <i class="fas fa-phone"></i> (509) 301-4266</a>
-
-                </p>
-            </div>
-            <div class="col-12 col-md-3">
-
-                <a href="mailto:chris.pedraza@gmail.com?subject=Hello&body=I wanted to reach out...">
-
-                    <i class="fas fa-envelope"></i> Email Me</a>
-            </div>
-            <div class="col-12 col-md-3">
-                <p>
-
-                    <a href="https://www.linkedin.com/in/chris-pedraza" target="_blank"> <i class="fab fa-linkedin"></i>
-                        LinkedIn</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
 
     <footer class="footer">
         <div class="container-fluid">
@@ -165,8 +90,51 @@
             </div>
         </div>
     </footer>
+</div>
 </body>
 
+<script>
+   
+    const navItems = document.querySelectorAll('.modern-nav-items li a');
+    const highlight = document.querySelector('.highlight');
 
+    function moveHighlight(e) {
+        const linkRect = e.target.getBoundingClientRect();
+        const parentRect = e.target.parentElement.parentElement.getBoundingClientRect();
+
+        highlight.style.width = `${linkRect.width}px`;
+        highlight.style.left = `${linkRect.left - parentRect.left}px`;
+    }
+
+    navItems.forEach(link => {
+        link.addEventListener('mouseenter', moveHighlight);
+        link.addEventListener('focus', moveHighlight); // for accessibility
+    });
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleContact");
+    const toggleNavBtn = document.getElementById("toggleNavButton");
+    const contactSection = document.getElementById("contactCollapse");
+    const chevron = document.getElementById("chevronIcon");
+
+    toggleBtn.addEventListener("click", () => {
+      contactSection.classList.toggle("hidden");
+
+      const isVisible = !contactSection.classList.contains("hidden");
+      chevron.classList.toggle("fa-chevron-down", isVisible);
+      chevron.classList.toggle("fa-chevron-up", !isVisible);
+    });
+    toggleNavBtn.addEventListener("click", () => {
+        contactSection.classList.toggle("hidden");
+
+const isVisible = !contactSection.classList.contains("hidden");
+chevron.classList.toggle("fa-chevron-down", isVisible);
+chevron.classList.toggle("fa-chevron-up", !isVisible);
+  
+    });
+  });
+
+
+</script>
 
 </html>

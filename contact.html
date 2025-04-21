@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0f67d9ee7d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Modak&family=Rock+3D&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="modern-navbar">
+        <ul class="modern-nav-items">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <span class="highlight"></span>
+        </ul>
+      </nav>
+  <!-- Main Content -->
+  <div class="container-fluid " id="content">
+    <div class="text-center mb-4">
+      <h3>Contact Me</h3>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+          <div class="contact-card green-card">
+            <p><i class="fas fa-user"></i> Chris Pedraza</p>
+          </div>
+        </div>
+      
+        <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+          <div class="contact-card purple-card">
+            <p>
+              <a href="tel:+15093014266" aria-label="Call Chris Pedraza">
+                <i class="fas fa-phone"></i> (509) 301-4266
+              </a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+          <div class="contact-card blue-card">
+            <p>
+              <a href="mailto:chris.pedraza@gmail.com?subject=Hello&body=I wanted to reach out..." aria-label="Send email to Chris Pedraza">
+                <i class="fas fa-envelope"></i> Email Me
+              </a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+          <div class="contact-card linkedin-card">
+            <p>
+              <a href="https://www.linkedin.com/in/chris-pedraza" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+
+  <script>
+
+    const navItems = document.querySelectorAll('.modern-nav-items li a');
+    const highlight = document.querySelector('.highlight');
+    const nav = document.querySelector('.modern-nav-items');
+
+
+    function moveHighlight(e) {
+        const linkRect = e.target.getBoundingClientRect();
+        const parentRect = e.target.parentElement.parentElement.getBoundingClientRect();
+
+        highlight.style.width = `${linkRect.width}px`;
+        highlight.style.left = `${linkRect.left - parentRect.left}px`;
+    }
+
+    navItems.forEach(link => {
+        link.addEventListener('mouseenter', moveHighlight);
+        link.addEventListener('focus', moveHighlight); // for accessibility
+
+    });
+
+nav.addEventListener('mouseleave', () => {
+    highlight.style.width = '0';
+});
+</script>
+</body>
+</html>
