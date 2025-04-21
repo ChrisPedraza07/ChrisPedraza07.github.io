@@ -44,7 +44,15 @@
                     <img src="https://s6.gifyu.com/images/bp6nI.gif" alt="Fly" class="img-fluid rounded ">
                 </div>
                 <div class="col-md-6">
-                    <img src=" images\flyGirl.gif" alt="Bedroom" class="img-fluid rounded">
+                    <iframe 
+                    src="https://www.youtube.com/embed/oU9iuFuco7A?autoplay=1&mute=1&loop=1&playlist=oU9iuFuco7A" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                
+                
                 </div>
                 <div class="col-md-6">
                     <img src="images\Diner.png" alt="Bedroom" class="img-fluid rounded">
@@ -58,6 +66,18 @@
                 <div class="col-md-6">
                     <img src="https://s6.gifyu.com/images/bz46x.png" alt="Bedroom" class="img-fluid rounded">
                 </div>
+                <div class="col-md-6">
+                    <img src="images/Squidward.png" alt="Bedroom" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <iframe 
+                    src="https://www.youtube.com/embed/6kdMTF4q2-w?autoplay=1&mute=1&loop=1&playlist=6kdMTF4q2-w"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                
            
             </div>
         </div>
@@ -84,6 +104,8 @@
     navItems.forEach(link => {
         link.addEventListener('mouseenter', moveHighlight);
         link.addEventListener('focus', moveHighlight); // for accessibility
+        link.addEventListener('click', moveHighlight); // for mobile
+
 
     });
 

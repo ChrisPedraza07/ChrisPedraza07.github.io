@@ -91,6 +91,7 @@
     navItems.forEach(link => {
         link.addEventListener('mouseenter', moveHighlight);
         link.addEventListener('focus', moveHighlight); // for accessibility
+        link.addEventListener('click', moveHighlight); // for mobile
 
     });
 

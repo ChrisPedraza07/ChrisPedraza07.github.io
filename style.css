@@ -312,6 +312,13 @@ iframe {
     #home{
         padding-top:30px;
     }
+    .modern-navbar{
+        max-width: 400px;
+    }
+    .modern-nav-items {
+        
+        gap: 20px;
+    }
     #introCard {
         background-color: #3A6EA5;
         color: white;
