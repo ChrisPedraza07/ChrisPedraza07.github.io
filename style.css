@@ -23,27 +23,22 @@
     font-style: normal;
   }
   
-                                                                            /*Global Styles*/
+/*Global Styles*/
 #content {
- 
-    background-color: #1F2D3D !important;
+    background-image: linear-gradient(to right, #1F2D3D, #3A6EA5) !important;
     color: white !important;
-    height: 100vh; /* Full height of the viewport */
-    padding-top: 100px; /* Space for navbar */
+    height: 100vh;
+    padding-top: 100px;
     justify-content: center;
+}
 
+body {
+    background-image: linear-gradient(to right, #1F2D3D, #3A6EA5) !important;
 }
 .ms-3{
     background-color: aliceblue !important;
 }
-.ribbon {
-    height: 12px;
-   background-color:  #599acf;
-}
-body{
-    background-color: #1F2D3D !important;
-  
-}
+
 
 img {
     max-width: 100%;
@@ -96,7 +91,7 @@ h1{
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: white;
+    background-color: #ffffff;
     padding: 10px 20px;
     border-radius: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -115,7 +110,7 @@ h1{
 
 .modern-nav-items li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: 500;
     font-family: "Bagel Fat One", system-ui;
     padding: 8px 12px;
@@ -125,13 +120,13 @@ h1{
 }
 
 .modern-nav-items li a:hover {
-    color:#D6E5BD;
+    color:#ffffff;
 }
 
 .highlight {
     position: absolute;
     height: 100%;
-    background: #353a3f;
+    background:#142639;
     border-radius: 40px;
     transition: all 0.4s ease;
     z-index: 0;
@@ -151,19 +146,47 @@ h1{
 }
 #textCard p {
     text-indent: 40px;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     margin-left: 50px;
+    margin-right: 50px;
+=======
+=======
+>>>>>>> Stashed changes
+    margin-left: 20px;
     margin-right: 20px;
+>>>>>>> Stashed changes
 }
-
+#introCardCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+<<<<<<< Updated upstream
+=======
+#introCardCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+>>>>>>> Stashed changes
 #introCard {
-    padding: 10px 5px 5px 5px;
-    background-color: #3A6EA5;
+    padding: 80px 5px 5px 5px;
+    background-color: #5fa19a;
     color: white;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     margin-left: 20px;
     aspect-ratio: 1 / 1; /* Makes it a square */
     justify-content: center;
+    
+
 }
 
 #introImage{
@@ -195,7 +218,7 @@ h1{
     padding-bottom: 10px;
 }
 .project-card-FE {
-    background-color: #ba88b4;
+    background-color: #aa88ba;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -254,7 +277,8 @@ iframe {
   }
   
   .purple-card {
-    background-color: #ba88b4;
+    background-color: #e77070;
+  
   }
   
   .blue-card {
@@ -262,7 +286,7 @@ iframe {
   }
   
   .linkedin-card {
-    background-color: #3A6EA5;
+     background-color: #a27bb5;
   }
   
   /* Card Content Styling */
@@ -313,20 +337,14 @@ iframe {
     #home{
         padding-top:30px;
     }
-    .modern-navbar{
-        max-width: 400px;
-    }
-    .modern-nav-items {
-        
-        gap: 20px;
-    }
     #introCard {
-        background-color: #3A6EA5;
+        background-color: #5fa19a;
         color: white;
+        padding: 20px 5px 5px 5px;
         border-radius: 16px;
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 10px;
         aspect-ratio: 1 / 1; /* Makes it a square */
         justify-content: center;
     }
@@ -350,8 +368,9 @@ iframe {
         color: #fff;
         border-radius: 16px;
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-        margin: 10% auto;
-        max-width: 450px;
+        margin-left: 15px;
+        margin-right: 5px;
+        max-width: 400px;
     
     }
     
