@@ -147,9 +147,12 @@ h1{
 #textCard p {
     text-indent: 40px;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     margin-left: 50px;
     margin-right: 50px;
 =======
+=======
+>>>>>>> Stashed changes
     margin-left: 20px;
     margin-right: 20px;
 >>>>>>> Stashed changes
@@ -162,6 +165,17 @@ h1{
     margin-bottom: 20px;
     margin-left: 60px;
 }
+<<<<<<< Updated upstream
+=======
+#introCardCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+>>>>>>> Stashed changes
 #introCard {
     padding: 80px 5px 5px 5px;
     background-color: #5fa19a;
@@ -339,6 +353,9 @@ iframe {
         margin-bottom: 20px;
         margin-left: 5px;
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     #introCard {
         background-color: #5fa19a;
