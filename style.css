@@ -66,7 +66,7 @@
   h3,
   h5 {
     color: white !important;
-    font-family: "Bagel Fat One", system-ui;
+    font-family: "Roboto", system-ui;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-align: center;
@@ -80,6 +80,9 @@
   h3,
   h5 {
     padding-bottom: 10px;
+  }
+  p{
+    font-size: 1.2rem;
   }
   
   #about,
@@ -120,7 +123,7 @@
     text-decoration: none;
     color: #000000;
     font-weight: 500;
-    font-family: "Bagel Fat One", system-ui;
+    font-family: "Roboto", system-ui;
     padding: 8px 12px;
     transition: color 0.3s ease;
     position: relative;
@@ -148,6 +151,7 @@
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    
   }
   
   #textCard {
@@ -223,7 +227,7 @@
   .project-card-BA:hover,
   .project-card-FE:hover,
   .project-card-DC:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
   }
   
   /* ---------------- Contact Page Styling ---------------- */
@@ -265,7 +269,7 @@
     color: white !important;
     font-weight: 500;
     font-size: 1.2rem;
-    font-family: "Bagel Fat One", system-ui;
+    font-family: "Roboto", system-ui;
     padding: 8px 12px;
     transition: color 0.3s ease;
     z-index: 1;
@@ -279,7 +283,8 @@
   }
   
   .contact-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
+
   }
   
   .col-sm-6.col-md-4 {
@@ -293,19 +298,34 @@
     #textCard {
       max-width: 400px;
     }
-  }
+    #introCard {
+      background-color: #5fa19a;
+      color: white;
+      padding: 20px 15px 5px 15px;
+      border-radius: 16px;
+   
+      padding-bottom: 40px;
+      
+    
+    
+  }}
   
   @media (max-width: 768px) {
-    #home {
-      padding-top: 30px;
-    }
+    
+
   
     #introCard {
       background-color: #5fa19a;
       color: white;
-      padding: 20px 5px 5px 5px;
+      padding: 20px 15px 5px 15px;
       border-radius: 16px;
-      margin: 0 10px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      
+    }
+    #introCardCol {
+     margin-left: 0px;
+     margin-right: 1100px;
     }
   
     #content {
@@ -315,14 +335,21 @@
     }
   
     #textCard {
-      margin: 0 5px 0 15px;
-      max-width: 400px;
+      margin: 0 5px 40px 15px;
+      max-width: 455px;
+      padding: 20px 0 20px 0;
+
     }
   
     .project-card-DC,
     .project-card-FE,
     .project-card-BA {
       margin: 10px 0;
+    }
+    .project-card-BA:hover,
+    .project-card-FE:hover,
+    .project-card-DC:hover {
+      transform: translateY(-5px);
     }
   }
   
