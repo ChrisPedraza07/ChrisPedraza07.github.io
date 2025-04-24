@@ -132,6 +132,7 @@
   
   .modern-nav-items li a:hover {
     color: #ffffff;
+    
   }
   
   .highlight {
@@ -250,19 +251,53 @@
   
   .green-card {
     background-color: #4c9563;
+    aspect-ratio: 1 / 1;
+    max-width:400px;
+    max-height: 400px;
   }
+    .green-card a:hover {
+    background-color: white !important;
+    color: #4c9563 !important;
+    border-radius: 8px;
+
+    }
   
-  .purple-card {
+  .red-card {
     background-color: #e77070;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    max-height: 400px;
   }
+    .red-card a:hover {
+    background-color: white !important;
+    color: #e77070 !important;
+    border-radius: 8px;
+    }
   
+
   .blue-card {
     background-color: #778eae;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    max-height: 400px;
   }
+    .blue-card a:hover {
+    background-color: white !important;
+    color: #778eae !important;
+    border-radius: 8px;
+    }
   
   .linkedin-card {
     background-color: #a27bb5;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    max-height: 400px;
   }
+    .linkedin-card a:hover {
+    background-color: white !important;
+    color: #a27bb5 !important;
+    border-radius: 8px;
+    }
   
   .contact-card a {
     text-decoration: none;
@@ -311,7 +346,9 @@
   }}
   
   @media (max-width: 768px) {
-    
+    .container-contact{
+      padding-bottom: 15px;
+    }
 
   
     #introCard {
@@ -351,5 +388,36 @@
     .project-card-DC:hover {
       transform: translateY(-5px);
     }
+    .green-card {
+      background-color: #4c9563;
+      aspect-ratio: 1 / 1;
+      max-width: 300px;
+      max-height: 300px;
+    }
+  
+    
+    .red-card {
+      background-color: #e77070;
+      aspect-ratio: 1 / 1;
+      max-width: 300px;
+      max-height: 300px;
+    }
+ 
+    
+  
+    .blue-card {
+      background-color: #778eae;
+      aspect-ratio: 1 / 1;
+      max-width: 300px;
+      max-height: 300px;
+    }
+ 
+    .linkedin-card {
+      background-color: #a27bb5;
+      aspect-ratio: 1 / 1;
+      max-width: 300px;
+      max-height: 300px;
+    }
+
   }
   
