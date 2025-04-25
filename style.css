@@ -354,6 +354,10 @@
   }}
   
   @media (max-width: 780px) {
+    .modern-navbar{
+      max-width: 700px;
+
+    }
     .container-contact{
       padding-bottom: 15px;
     }
