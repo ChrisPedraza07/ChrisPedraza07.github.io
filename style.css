@@ -19,12 +19,21 @@
   
   .rock-3d-regular {
     font-family: "Rock 3D", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .bagel-fat-one-regular {
     font-family: "Bagel Fat One", system-ui;
   }
+  .original-surfer-regular {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   
+  
+
   /* ---------------- Global Styles ---------------- */
   body,
   #content {
@@ -61,30 +70,39 @@
     margin-top: 1rem;
   }
   
-  h1,
+h1{
+  font-family: "Rock 3D", system-ui;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white !important;
+}
   h2,
   h3,
-  h5 {
+  h4 {
     color: white !important;
-    font-family: "Roboto", system-ui;
+    font-family:"roboto", system-ui;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-align: center;
   }
   
-  h1 {
-    /* Specific overrides can be added if needed */
-  }
-  
+h1,
   h2,
   h3,
-  h5 {
+  h4
+   {
     padding-bottom: 10px;
   }
   p{
     font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
-  
+  .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
   #about,
   #portfolio,
   #gallery {
@@ -102,7 +120,7 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px 20px;
     border-radius: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -242,15 +260,15 @@
     transition: transform 0.3s ease;
     width: 100%;
     aspect-ratio: 1 / 1;
+    max-width: 450px;
+    max-height: 450px;
    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-    max-width: 500px;
-    max-height: 500px;
+
    
     text-decoration: none;
     
@@ -339,7 +357,7 @@
   /* ---------------- Responsive Settings ---------------- */
   @media (max-width: 1400px) {
     #textCard {
-      max-width: 400px;
+      max-width: 600px;
     }
     #introCard {
       background-color: #5fa19a;
@@ -360,7 +378,7 @@
     }
     .modern-nav-items {
    
-      gap: 20px;
+      gap: 10px;
 
     }
     .container-contact{
