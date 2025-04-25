@@ -195,11 +195,11 @@
     transition: transform 0.3s ease;
   }
   
-  #textCard:hover,
+  /*#textCard:hover,
   #introCard:hover {
     transform: scale(1.05) translateY(-5px);
   }
-  
+  */
   /* ---------------- Project Page Styling ---------------- */
   .project-card-DC,
   .project-card-FE,
@@ -355,7 +355,12 @@
   
   @media (max-width: 780px) {
     .modern-navbar{
-      max-width: 700px;
+      max-width:fit-content;
+
+    }
+    .modern-nav-items {
+   
+      gap: 20px;
 
     }
     .container-contact{
