@@ -14,21 +14,7 @@
   font-style: normal;
 }
 
-.modak-regular {
-  font-family: "Modak", system-ui;
-}
 
-.rock-3d-regular {
-  font-family: "Rock 3D", system-ui;
-}
-
-.bagel-fat-one-regular {
-  font-family: "Bagel Fat One", system-ui;
-}
-
-.original-surfer-regular {
-  font-family: "Original Surfer", sans-serif;
-}
 
 /* ---------------- Global Styles ---------------- */
 body,
@@ -168,6 +154,7 @@ p {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   padding: 10px 20px;
+
 }
   #introCard p{
     text-indent: 0px !important;
@@ -176,26 +163,28 @@ p {
 
   background-color: #4c9563;
   color: #fff;
-  margin: 10% auto;
+  margin-right: 100px;
   max-width: 850px;
 }
-
-
-#introCardCol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0 20px 00px;
-}
-
 #introCard {
-  padding: 80px 5px 5px 5px;
+  padding: 20px 20px 20px 20px;
   background-color: #5fa19a;
   color: white;
-  margin-left: 20px;
+  margin-left: 100px;
+  margin-top: 100;
+  margin-top: 2%;
   aspect-ratio: 1 / 1;
   justify-content: center;
 }
+
+  #introCardCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 00px;
+  }
+
+
 
 #introImage {
   width: 100%;
@@ -206,16 +195,60 @@ p {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+/*-------------------Gallery Page Styling ------------------*/
+
+/* Gallery wrapper styling */
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem 0;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.image-carousel img {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Dimming effect for side images */
+.image-carousel img:not(:nth-child(n+2):nth-child(-n+4)) {
+  filter: brightness(0.5);
+}
+
+.image-carousel img:hover {
+  transform: scale(1.05);
+  filter: brightness(1) !important;
+}
+
 
 /* ---------------- Project Page Styling ---------------- */
 .project-card-DC,
-.project-card-FE,
+
 .project-card-BA {
   border-radius: 12px;
-  padding: 1.5rem 1rem 10px;
+  padding: 1.5rem 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-card-FE
+ {
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+
 }
 
 .project-card-DC {
@@ -235,6 +268,7 @@ p {
 .project-card-DC:hover {
   transform: translateY(-5px) scale(1.02);
 }
+#project-grid{}
 
 /* ---------------- Contact Page Styling ---------------- */
 .container-contact {
@@ -378,7 +412,7 @@ p {
   .project-card-DC,
   .project-card-FE,
   .project-card-BA {
-    margin: 10px 0;
+    margin: 10px 10px;
   }
 
   .project-card-BA:hover,
