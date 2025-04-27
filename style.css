@@ -24,11 +24,10 @@ body,
 
 #content {
   color: white !important;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   justify-content: center;
 }
-
 .ms-3 {
   background-color: aliceblue !important;
 }
