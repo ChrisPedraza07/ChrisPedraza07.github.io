@@ -81,7 +81,11 @@ p {
   padding: 5px 5px 5px 5px;
   text-indent: 40px;
 }
+footer p{
+  font-size: .8rem;
+color: white !important;
 
+}
 .row {
   padding: 10px 0;
 }
@@ -267,7 +271,7 @@ p {
 .project-card-DC:hover {
   transform: translateY(-5px) scale(1.02);
 }
-#project-grid{}
+
 
 /* ---------------- Contact Page Styling ---------------- */
 .container-contact {
