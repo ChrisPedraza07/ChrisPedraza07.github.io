@@ -53,10 +53,12 @@ iframe {
 
 h1 {
   font-family: "Rock 3D", system-ui;
-  font-weight: 700;
+  font-weight: 50;
   letter-spacing: 0.5px;
   text-align: center;
   color: white !important;
+text-shadow: #534d56 5px 8px 10px;
+  border-radius: 8px;
 }
 
 h2,
