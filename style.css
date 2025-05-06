@@ -19,8 +19,8 @@
 /* ---------------- Global Styles ---------------- */
 body,
 #content {
-  background-image: linear-gradient(to right, #1f2d3d, #3a6ea5) !important;
-}
+  background-image: linear-gradient(to right, #decdf5, #656176) !important;
+} 
 
 #content {
   color: white !important;
@@ -107,7 +107,7 @@ color: white !important;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f8f1ffb5;
   padding: 10px 20px;
   border-radius: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -144,7 +144,7 @@ color: white !important;
   height: 100%;
   width: 0;
   left: 0;
-  background: #142639;
+  background: #534d56;
   border-radius: 40px;
   transition: all 0.4s ease;
   z-index: 0;
@@ -164,14 +164,14 @@ color: white !important;
   }
 #textCard {
 
-  background-color: #428256;
+  background-color: #534d56;
   color: #fff;
   margin-right: 100px;
   max-width: 850px;
 }
 #introCard {
   padding: 20px 20px 20px 20px;
-  background-color: #55918b;
+  background-color: #1b998b;
   color: white;
   margin-left: 100px;
   margin-top: 100;
@@ -255,15 +255,15 @@ color: white !important;
 }
 
 .project-card-DC {
-  background-color: #458659;
+  background-color: #534d56;
 }
 
 .project-card-FE {
-  background-color: #997aa8;
+  background-color: #1b998b;
 }
 
 .project-card-BA {
-  background-color: #6e83a1;
+  background-color: #1b6899; 
 }
 
 .project-card-BA:hover,
@@ -304,20 +304,21 @@ color: white !important;
 }
 
 .green-card {
-  background-color: #45885b;
+  background-color:#9c47a7;
 }
 
 .red-card {
-  background-color: #c06161;
+  background-color: #1b998b;
 }
 
 .blue-card {
-  background-color: #6d819e;
+  background-color:  #534d56;
 }
 
 .linkedin-card {
-  background-color: #9270a3;
+  background-color: #1b6899; 
 }
+
 
 .green-card:hover,
 .red-card:hover,
@@ -327,20 +328,22 @@ color: white !important;
 }
 
 .green-card:hover {
-  color:#45885b;
+  color:#9c47a7;
 }
 
 .red-card:hover {
-  color: #c06161;
+  color:  #1b998b;
 }
 
 .blue-card:hover {
-  color: #6d819e;
+  color: #534d56;
 }
 
+
 .linkedin-card:hover {
-  color: #9270a3;
+  color:#1b6899; 
 }
+
 
 .green-card:hover i,
 .red-card:hover i,
