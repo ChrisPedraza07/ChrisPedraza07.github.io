@@ -114,6 +114,25 @@ nav.addEventListener('mouseleave', () => {
     highlight.style.width = '0';
 });
 </script>
+<!-- CSS animations script-->
+ <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const directions = ['slideInLeft', 'slideInRight', 'slideInTop', 'slideInBottom'];
+
+    function applyRandomSlideIn(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const randomDirection = directions[Math.floor(Math.random() * directions.length)];
+        element.classList.add('slide-in');
+        element.style.animationName = randomDirection;
+      }
+    }
+
+    applyRandomSlideIn('introCard');
+    applyRandomSlideIn('textCard');
+  });
+</script>
+
  
 </body>
 </html>
