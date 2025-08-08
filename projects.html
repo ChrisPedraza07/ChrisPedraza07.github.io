@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,16 +26,16 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="modern-navbar">
-    <ul class="modern-nav-items">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <span class="highlight"></span>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <nav class="modern-navbar">
+        <ul class="modern-nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <span class="highlight"></span>
+        </ul>
+    </nav>
 
     <div class="container-fluid" id="content">
         <div id="projectGrid" class="row" data-masonry='{"percentPosition": true }'>
@@ -43,14 +44,15 @@
 
                 <div class="row" id="projects">
                     <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-                        <div class="project-card-DC py-3 px-20">
+                        <div class="project-card-DC py-3 px-20" id="DC">
                             <h4>Donut Cop</h4>
                             <p>A 2D platformer where you play as a cop turned donut who's hunting down his disgruntled
                                 ex-partner for betraying him. All assets were hand drawn and animated in Unity. This was
                                 my
                                 first solo project/game that I made in Unity. </p>
-                            <p>I learned a lot about game development and how to use Unity
-                                to make a game. I also learned how to use C# to program the game mechanics.
+                            <p>I learned a lot about game development through this project; concept creation, planning,
+                                asset creation, and ultimately how to use Unity.
+                                I also learned how to use C# to program the game mechanics.
                             </p>
                             <iframe src="https://www.youtube.com/embed/FnE3mpM7nAY?si=p5zxawLLPx-amNHF"
                                 title="YouTube video player" frameborder="0"
@@ -60,7 +62,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-                        <div class="project-card-FE py-3 px-20">
+                        <div class="project-card-FE py-3 px-20" id="FE">
                             <h4>Factory Escape</h4>
                             <p>This 2D platformer is a mobile game that utilizes AR targets to load different levels.
                                 This was my first group project, my responsibilites were
@@ -76,8 +78,8 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-                        <div class="project-card-BA py-3 px-20">
+                    <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
+                        <div class="project-card-BA py-3 px-20" id="BA">
                             <h4>Battle Arena</h4>
                             <p>Battle Arena is my first 3D game and as well as my first local co-op game.
                                 Two players on opposing sides of the arena battle to reach the other player's base to
@@ -98,15 +100,34 @@
 
                         </div>
                     </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
+                        <div class="project-card-BA py-3 px-20" id="killerCandy">
+                            <h4>Killer Candy</h4>
+                            <p>
+                                I wanted to make a 3rd person mob shooter somewhat inspired by autoshooters like Vampire Survivors; I love that style of gameplay but wanted to make something that requires a little more player involvment. My idea was  to add 3rd person shooting into the mix as well as the addition of player triggered powerups along with autoshooting powerups and passive powerups. 
+                                I really have no story for the candy theme, I just liked the idea of zombie candy, Adventure time / Wreck it Ralph inspired. 
+                                Assets were created in blender and game engine is Unity.
+                            </p>
+                            <p>
+
+                            </p>
+                            <iframe src="https://www.youtube.com/embed/WsXZZxaAjqw?si=I6WaVsAgFmbAK8Ua"
+                                title="Killer Candy" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="text-center">
         <p>&copy; 2025 Designed By Chris Pedraza. All rights reserved.</p>
-      
+
         </p>
-        </footer>
+    </footer>
 </body>
 
 <script>
@@ -132,9 +153,29 @@
 
     });
 
-nav.addEventListener('mouseleave', () => {
-    highlight.style.width = '0';
-});
+    nav.addEventListener('mouseleave', () => {
+        highlight.style.width = '0';
+    });
+
+    //CSS animations script
+  window.addEventListener('DOMContentLoaded', () => {
+    const directions = ['slideInLeft', 'slideInRight', 'slideInTop', 'slideInBottom'];
+
+    function applyRandomSlideIn(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const randomDirection = directions[Math.floor(Math.random() * directions.length)];
+        element.classList.add('slide-in');
+        element.style.animationName = randomDirection;
+      }
+    }
+
+    applyRandomSlideIn('BA');
+    applyRandomSlideIn('DC');
+    applyRandomSlideIn('FE');
+    applyRandomSlideIn('killerCandy')
+ 
+  });
 </script>
 
 </html>
