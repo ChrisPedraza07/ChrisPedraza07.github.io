@@ -179,8 +179,8 @@
         const linkRect = e.target.getBoundingClientRect();
         const parentRect = e.target.parentElement.parentElement.getBoundingClientRect();
 
-        highlight.style.width = `${linkRect.width}px`;
-        highlight.style.left = `${linkRect.left - parentRect.left}px`;
+        highlight.style.width = ${linkRect.width}px;
+        highlight.style.left = ${linkRect.left - parentRect.left}px;
     }
 
     navItems.forEach(link => {
