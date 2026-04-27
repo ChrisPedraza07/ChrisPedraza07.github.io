@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Chris Pedraza</title>
     <link rel="stylesheet" href="style.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/0f67d9ee7d.js" crossorigin="anonymous"></script>
@@ -46,6 +46,7 @@
                                         <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
                         <div class="project-card-FE py-3 px-20" id="FE">
                             <h4>Sweet Justice</h4>
+                            <div class="project-tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">3D Art</span><span class="tag">WIP</span></div>
                             <p>An action/mystery game set in a vibrant, sugary-treat–themed world that’s slowly slipping into chaos. 
                                 You play as Officer Pinkglaze, a seasoned donut cop who thought he’d seen it all… until now.
                             </p>
@@ -67,6 +68,7 @@
                     <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
                         <div class="project-card-BA py-3 px-20" id="BA">
                             <h4>Battle Arena</h4>
+                            <div class="project-tags"><span class="tag">Unity</span><span class="tag">Local Co-op</span><span class="tag">Blender</span></div>
                             <p>Battle Arena is my first 3D game and as well as my first local co-op game.
                                 Two players on opposing sides of the arena battle to reach the other player's base to
                                 score points.
@@ -89,6 +91,7 @@
                     <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
                         <div class="project-card-BA py-3 px-20" id="killerCandy">
                             <h4>Killer Candy</h4>
+                            <div class="project-tags"><span class="tag">Unity</span><span class="tag">Shooter</span><span class="tag">Prototype</span></div>
                             <p>
                                 I wanted to make a 3rd person mob shooter somewhat inspired by autoshooters like Vampire Survivors; I love that style of gameplay but wanted to make something that requires a little more player involvment. My idea was  to add 3rd person shooting into the mix as well as the addition of player triggered powerups along with autoshooting powerups and passive powerups. 
                                 I really have no story for the candy theme, I just liked the idea of zombie candy, Adventure time / Wreck it Ralph inspired. 
@@ -108,6 +111,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 d-flex" >
                         <div class="project-card-DC py-3 px-20" id="HackySack">
                             <h4>Hacky Sack Attack</h4>
+                            <div class="project-tags"><span class="tag">Mobile</span><span class="tag">Touch Controls</span><span class="tag">Prototype</span></div>
                             <p>
                                 This project was born out of the desire to make a mobile game that was simple and fun to play. I wanted to make a game that could be played in short bursts, perfect for killing time while waiting in line or during a quick break. The concept is simple the player controls two shoes that kick the hacky sack to keep it airborne while also performing tricks.
                                 The prototype is functional and was a great learning experience for me in terms of mobile game development, I learned how to implement touch controls and optimize the game for mobile devices. I also learned about the importance of playtesting and iterating on game design to create a fun and engaging experience for players. I might someday take 
@@ -126,8 +130,9 @@
                     </div>
                
                     <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-                        <div class="project-card-FE py-3 px-20" id="FE">
+                        <div class="project-card-FE py-3 px-20" id="FactoryEscape">
                             <h4>Factory Escape</h4>
+                            <div class="project-tags"><span class="tag">AR</span><span class="tag">Platformer</span><span class="tag">Team Project</span></div>
                             <p>This 2D platformer is a mobile game that utilizes AR targets to load different levels.
                                 This was my first group project, my responsibilites were
                                 character creation/animation and I did some of the movement scripting. </p>
@@ -165,8 +170,8 @@
         const linkRect = e.target.getBoundingClientRect();
         const parentRect = e.target.parentElement.parentElement.getBoundingClientRect();
 
-        highlight.style.width = ${linkRect.width}px;
-        highlight.style.left = ${linkRect.left - parentRect.left}px;
+        highlight.style.width = `${linkRect.width}px`;
+        highlight.style.left = `${linkRect.left - parentRect.left}px`;
     }
 
     navItems.forEach(link => {
@@ -197,6 +202,7 @@
     applyRandomSlideIn('BA');
     applyRandomSlideIn('DC');
     applyRandomSlideIn('FE');
+    applyRandomSlideIn('FactoryEscape');
     applyRandomSlideIn('killerCandy')
     applyRandomSlideIn('HackySack')
  
