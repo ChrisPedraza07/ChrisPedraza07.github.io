@@ -476,6 +476,14 @@ iframe {
 .trex-hero-art figcaption,
 .trex-media figcaption { margin-top: .7rem; color: var(--muted); font-size: .82rem; text-align: center; }
 .trex-jump-link { color: var(--accent); font-weight: 800; text-decoration: none; }
+.trex-image-button { position: relative; display: block; width: 100%; padding: 0; overflow: hidden; color: white; background: #0b0c18; border: 0; border-radius: calc(var(--radius-sm) - 2px); cursor: zoom-in; }
+.trex-image-button img { transition: transform .45s cubic-bezier(.2,.8,.2,1), filter .3s ease; }
+.trex-image-button:hover img,
+.trex-image-button:focus-visible img { transform: scale(1.025); filter: brightness(.7); }
+.trex-image-button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.trex-image-zoom { position: absolute; left: 50%; bottom: 1rem; transform: translate(-50%, 10px); padding: .5rem .85rem; color: white; background: rgba(10,11,24,.84); border: 1px solid rgba(255,255,255,.3); border-radius: 999px; font-size: .76rem; font-weight: 800; opacity: 0; transition: opacity .25s ease, transform .25s ease; }
+.trex-image-button:hover .trex-image-zoom,
+.trex-image-button:focus-visible .trex-image-zoom { transform: translate(-50%, 0); opacity: 1; }
 
 .trex-overview {
   display: grid;
@@ -500,6 +508,8 @@ iframe {
 .trex-stage--reverse .trex-stage-copy { order: 2; }
 .trex-stage-copy { position: relative; padding: 1rem; }
 .trex-stage-number { display: block; margin-bottom: .6rem; color: rgba(255,255,255,.18); font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 800; line-height: .9; }
+.trex-process-note { padding: .85rem 1rem; border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; background: rgba(32, 224, 207, .08); font-size: .9rem; }
+.trex-process-note strong { color: var(--text); }
 .trex-media { margin: 0; padding: .75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel-dark); box-shadow: var(--shadow-soft); }
 .trex-media img { width: 100%; max-height: 700px; object-fit: contain; background: #0b0c18; }
 .trex-media-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }

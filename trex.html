@@ -35,7 +35,10 @@
                 <a class="trex-jump-link" href="#process">View the process <span aria-hidden="true">↓</span></a>
             </div>
             <figure class="trex-hero-art">
-                <img src="images/Trex/TRex.png" alt="Finished textured T-Rex character in profile" fetchpriority="high">
+                <button class="trex-image-button" type="button" aria-label="View final textured T-Rex full size">
+                    <img src="images/Trex/TRex.png" alt="Finished textured T-Rex character in profile" fetchpriority="high">
+                    <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                </button>
                 <figcaption>Final textured character</figcaption>
             </figure>
         </header>
@@ -57,7 +60,10 @@
                     <p>I established the silhouette, proportions, and personality in Blender, then sculpted the large forms before layering in the creature’s scales, folds, and facial detail. Keeping the silhouette readable was especially important for the oversized head, compact arms, and powerful legs.</p>
                 </div>
                 <figure class="trex-media">
-                    <img src="images/Trex/Screenshot 2026-08-14 110522.png" alt="High-detail T-Rex sculpt shown in Blender" loading="lazy">
+                    <button class="trex-image-button" type="button" aria-label="View high-resolution sculpt full size">
+                        <img src="images/Trex/Screenshot 2026-08-14 110522.png" alt="High-detail T-Rex sculpt shown in Blender" loading="lazy">
+                        <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                    </button>
                     <figcaption>The high-resolution sculpt in Blender.</figcaption>
                 </figure>
             </article>
@@ -68,15 +74,22 @@
                     <p class="trex-kicker">Maya &amp; Blender</p>
                     <h2>Remesh &amp; UVs</h2>
                     <p>I rebuilt the sculpt into an animation-ready quad mesh with deliberate edge flow around the eyes, mouth, shoulders, hips, and other deformation zones. After retopology, I cut and packed UV islands to give the body consistent texture space and clean seams.</p>
+                    <p class="trex-process-note"><strong>Process note:</strong> The UV layout shown here is an updated version created after the original texture work. The finished texture was made using the original UV layout.</p>
                 </div>
                 <div class="trex-media-stack">
                     <figure class="trex-media">
-                        <img src="images/Trex/Screenshot 2026-08-14 110748.png" alt="Retopologized T-Rex mesh with quad topology visible in Maya" loading="lazy">
+                        <button class="trex-image-button" type="button" aria-label="View T-Rex quad topology full size">
+                            <img src="images/Trex/Screenshot 2026-08-14 110748.png" alt="Retopologized T-Rex mesh with quad topology visible in Maya" loading="lazy">
+                            <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                        </button>
                         <figcaption>Clean quad topology prepared for deformation.</figcaption>
                     </figure>
                     <figure class="trex-media">
-                        <img src="images/Trex/Screenshot 2026-08-14 122602.png" alt="T-Rex UV layout and seam placement in Blender" loading="lazy">
-                        <figcaption>UV seams and packed islands.</figcaption>
+                        <button class="trex-image-button" type="button" aria-label="View updated T-Rex UV layout full size">
+                            <img src="images/Trex/Screenshot 2026-08-14 122602.png" alt="T-Rex UV layout and seam placement in Blender" loading="lazy">
+                            <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                        </button>
+                        <figcaption>Updated UV seams and packed islands.</figcaption>
                     </figure>
                 </div>
             </article>
@@ -90,12 +103,18 @@
                 </div>
                 <div class="trex-media-stack">
                     <figure class="trex-media">
-                        <img src="images/Trex/Screenshot 2026-08-14 123100.png" alt="T-Rex texture work and UV view in Substance 3D Painter" loading="lazy">
+                        <button class="trex-image-button" type="button" aria-label="View T-Rex material development full size">
+                            <img src="images/Trex/Screenshot 2026-08-14 123100.png" alt="T-Rex texture work and UV view in Substance 3D Painter" loading="lazy">
+                            <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                        </button>
                         <figcaption>Material development in Substance 3D Painter.</figcaption>
                     </figure>
                     <figure class="trex-media">
-                        <img src="images/Trex/Screenshot 2026-08-14 105625.png" alt="T-Rex texture map with wireframe UV layout" loading="lazy">
-                        <figcaption>Texture coverage across the UV layout.</figcaption>
+                        <button class="trex-image-button" type="button" aria-label="View original T-Rex texture layout full size">
+                            <img src="images/Trex/Screenshot 2026-08-14 105625.png" alt="T-Rex texture map with wireframe UV layout" loading="lazy">
+                            <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                        </button>
+                        <figcaption>Texture coverage on the original UV layout.</figcaption>
                     </figure>
                 </div>
             </article>
@@ -108,7 +127,10 @@
                     <p>I created a custom Maya rig with controls for the body, limbs, tail, and jaw. Custom attributes handle foot poses and toe spread, while blend shapes drive eyelid movement. The result is a practical character rig that supports both broad action poses and smaller facial beats.</p>
                 </div>
                 <figure class="trex-media">
-                    <img src="images/Trex/Screenshot 2026-08-14 105751.png" alt="Fully rigged T-Rex with custom animation controls visible in Maya" loading="lazy">
+                    <button class="trex-image-button" type="button" aria-label="View final T-Rex control rig full size">
+                        <img src="images/Trex/Screenshot 2026-08-14 105751.png" alt="Fully rigged T-Rex with custom animation controls visible in Maya" loading="lazy">
+                        <span class="trex-image-zoom" aria-hidden="true">View full size</span>
+                    </button>
                     <figcaption>The final control rig and skinned character in Maya.</figcaption>
                 </figure>
             </article>
@@ -124,6 +146,12 @@
             <a class="btn-portfolio" href="projects.html">Back to all projects</a>
         </section>
     </main>
+
+    <dialog class="gallery-lightbox trex-lightbox" aria-label="Full-size T-Rex project image">
+        <button class="lightbox-close" type="button" aria-label="Close full-size image">&times;</button>
+        <img class="lightbox-image" src="" alt="">
+        <p class="lightbox-caption"></p>
+    </dialog>
 
     <footer class="text-center"><p>&copy; 2026 Designed by Chris Pedraza. All rights reserved.</p></footer>
     <script>
@@ -141,6 +169,34 @@
             link.addEventListener('focus', moveHighlight);
         });
         nav.addEventListener('mouseleave', () => { highlight.style.width = '0'; });
+
+        const lightbox = document.querySelector('.trex-lightbox');
+        const lightboxImage = lightbox.querySelector('.lightbox-image');
+        const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+        const closeButton = lightbox.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.trex-image-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const image = button.querySelector('img');
+                const caption = button.closest('figure').querySelector('figcaption').textContent;
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+                lightboxCaption.textContent = caption;
+                lightbox.showModal();
+                document.body.classList.add('lightbox-open');
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.close();
+            document.body.classList.remove('lightbox-open');
+        }
+
+        closeButton.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', event => {
+            if (event.target === lightbox) closeLightbox();
+        });
+        lightbox.addEventListener('close', () => document.body.classList.remove('lightbox-open'));
     </script>
 </body>
 </html>
