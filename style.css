@@ -417,6 +417,11 @@ iframe {
   margin-top: auto;
 }
 
+.project-details-link {
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -443,6 +448,67 @@ iframe {
 .container-contact {
   width: min(100%, var(--max-width));
 }
+
+/* ---------------- T-Rex Case Study ---------------- */
+.trex-case-study {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+}
+
+.trex-hero {
+  min-height: 68vh;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1.4fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(1.5rem, 4vw, 4rem);
+  border: 1px solid var(--border);
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(143, 92, 255, 0.18), rgba(32, 224, 207, 0.06)), var(--panel-dark);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.trex-hero h1 { text-align: left; }
+.trex-lede { font-size: clamp(1rem, 1.5vw, 1.22rem); }
+.trex-hero-art { margin: 0; }
+.trex-hero-art img { width: 100%; filter: drop-shadow(0 30px 35px rgba(0,0,0,.45)); }
+.trex-hero-art figcaption,
+.trex-media figcaption { margin-top: .7rem; color: var(--muted); font-size: .82rem; text-align: center; }
+.trex-jump-link { color: var(--accent); font-weight: 800; text-decoration: none; }
+
+.trex-overview {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+  padding: clamp(4rem, 9vw, 8rem) clamp(1rem, 5vw, 5rem);
+}
+.trex-overview h2,
+.trex-stage h2,
+.trex-demo h2 { text-align: left; font-size: clamp(2rem, 4vw, 3.3rem); }
+.trex-overview > p { font-size: clamp(1.05rem, 1.6vw, 1.3rem); }
+.trex-kicker { margin: 0 0 .4rem; color: var(--accent) !important; font-size: .76rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+
+.trex-process { display: grid; gap: clamp(4rem, 10vw, 8rem); }
+.trex-stage {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.5fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+.trex-stage--reverse .trex-stage-copy { order: 2; }
+.trex-stage-copy { position: relative; padding: 1rem; }
+.trex-stage-number { display: block; margin-bottom: .6rem; color: rgba(255,255,255,.18); font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 800; line-height: .9; }
+.trex-media { margin: 0; padding: .75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel-dark); box-shadow: var(--shadow-soft); }
+.trex-media img { width: 100%; max-height: 700px; object-fit: contain; background: #0b0c18; }
+.trex-media-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.trex-media-stack .trex-media:nth-child(2) { margin-top: 3rem; }
+
+.trex-demo { width: min(100%, 980px); margin: clamp(6rem, 12vw, 10rem) auto 2rem; text-align: center; }
+.trex-demo h2 { text-align: center; }
+.trex-video-frame { margin: 2rem 0; padding: .65rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel-dark); box-shadow: var(--shadow); }
+.trex-video-frame iframe { margin: 0; border: 0; }
 
 .gallery-header {
   max-width: 760px;
@@ -897,6 +963,15 @@ footer p {
   .gallery-video-grid {
     grid-template-columns: 1fr;
   }
+
+  .trex-hero,
+  .trex-overview,
+  .trex-stage { grid-template-columns: 1fr; }
+
+  .trex-hero { min-height: 0; }
+  .trex-stage--reverse .trex-stage-copy { order: 0; }
+  .trex-media-stack { grid-template-columns: 1fr; }
+  .trex-media-stack .trex-media:nth-child(2) { margin-top: 0; }
 }
 
 @media (max-width: 520px) {

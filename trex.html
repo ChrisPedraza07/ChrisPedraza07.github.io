@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A behind-the-scenes look at Chris Pedraza's T-Rex character workflow, from sculpt and retopology to texturing and rigging.">
+    <title>T-Rex Character Pipeline | Chris Pedraza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="modern-navbar" aria-label="Primary navigation">
+        <ul class="modern-nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <span class="highlight" aria-hidden="true"></span>
+        </ul>
+    </nav>
+
+    <main id="content" class="trex-case-study">
+        <header class="trex-hero slide-in">
+            <div class="trex-hero-copy">
+                <p class="gallery-eyebrow">Character pipeline case study</p>
+                <h1>T-Rex</h1>
+                <p class="trex-lede">A complete creature workflow built across Blender, Maya, and Substance 3D Painter—from the first high-resolution sculpt to an animation-ready character.</p>
+                <div class="project-tags" aria-label="Software and disciplines">
+                    <span class="tag">Blender</span><span class="tag">Maya</span><span class="tag">Substance 3D Painter</span><span class="tag">Sculpting</span><span class="tag">Rigging</span>
+                </div>
+                <a class="trex-jump-link" href="#process">View the process <span aria-hidden="true">↓</span></a>
+            </div>
+            <figure class="trex-hero-art">
+                <img src="images/Trex/TRex.png" alt="Finished textured T-Rex character in profile" fetchpriority="high">
+                <figcaption>Final textured character</figcaption>
+            </figure>
+        </header>
+
+        <section class="trex-overview" aria-labelledby="overview-title">
+            <div>
+                <p class="trex-kicker">The goal</p>
+                <h2 id="overview-title">One character, start to finish</h2>
+            </div>
+            <p>I developed this T-Rex through the major stages of a production character pipeline. The project began as an expressive high-detail sculpt, then moved through clean topology and UV preparation before texturing. I finished by building a control rig designed for readable, animator-friendly posing.</p>
+        </section>
+
+        <section id="process" class="trex-process" aria-label="T-Rex development process">
+            <article class="trex-stage">
+                <div class="trex-stage-copy">
+                    <span class="trex-stage-number">01</span>
+                    <p class="trex-kicker">Blender</p>
+                    <h2>Model &amp; sculpt</h2>
+                    <p>I established the silhouette, proportions, and personality in Blender, then sculpted the large forms before layering in the creature’s scales, folds, and facial detail. Keeping the silhouette readable was especially important for the oversized head, compact arms, and powerful legs.</p>
+                </div>
+                <figure class="trex-media">
+                    <img src="images/Trex/Screenshot 2026-08-14 110522.png" alt="High-detail T-Rex sculpt shown in Blender" loading="lazy">
+                    <figcaption>The high-resolution sculpt in Blender.</figcaption>
+                </figure>
+            </article>
+
+            <article class="trex-stage trex-stage--reverse">
+                <div class="trex-stage-copy">
+                    <span class="trex-stage-number">02</span>
+                    <p class="trex-kicker">Maya &amp; Blender</p>
+                    <h2>Remesh &amp; UVs</h2>
+                    <p>I rebuilt the sculpt into an animation-ready quad mesh with deliberate edge flow around the eyes, mouth, shoulders, hips, and other deformation zones. After retopology, I cut and packed UV islands to give the body consistent texture space and clean seams.</p>
+                </div>
+                <div class="trex-media-stack">
+                    <figure class="trex-media">
+                        <img src="images/Trex/Screenshot 2026-08-14 110748.png" alt="Retopologized T-Rex mesh with quad topology visible in Maya" loading="lazy">
+                        <figcaption>Clean quad topology prepared for deformation.</figcaption>
+                    </figure>
+                    <figure class="trex-media">
+                        <img src="images/Trex/Screenshot 2026-08-14 122602.png" alt="T-Rex UV layout and seam placement in Blender" loading="lazy">
+                        <figcaption>UV seams and packed islands.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="trex-stage">
+                <div class="trex-stage-copy">
+                    <span class="trex-stage-number">03</span>
+                    <p class="trex-kicker">Substance 3D Painter</p>
+                    <h2>Texturing</h2>
+                    <p>In Substance 3D Painter, I built a cool charcoal skin palette with a muted purple underside, warm claws, and a bright amber eye as the focal point. Baked surface detail and layered materials preserve the sculpted scale work while adding color variation and definition.</p>
+                </div>
+                <div class="trex-media-stack">
+                    <figure class="trex-media">
+                        <img src="images/Trex/Screenshot 2026-08-14 123100.png" alt="T-Rex texture work and UV view in Substance 3D Painter" loading="lazy">
+                        <figcaption>Material development in Substance 3D Painter.</figcaption>
+                    </figure>
+                    <figure class="trex-media">
+                        <img src="images/Trex/Screenshot 2026-08-14 105625.png" alt="T-Rex texture map with wireframe UV layout" loading="lazy">
+                        <figcaption>Texture coverage across the UV layout.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="trex-stage trex-stage--reverse">
+                <div class="trex-stage-copy">
+                    <span class="trex-stage-number">04</span>
+                    <p class="trex-kicker">Maya</p>
+                    <h2>Rigging</h2>
+                    <p>I created a custom Maya rig with controls for the body, limbs, tail, and jaw. Custom attributes handle foot poses and toe spread, while blend shapes drive eyelid movement. The result is a practical character rig that supports both broad action poses and smaller facial beats.</p>
+                </div>
+                <figure class="trex-media">
+                    <img src="images/Trex/Screenshot 2026-08-14 105751.png" alt="Fully rigged T-Rex with custom animation controls visible in Maya" loading="lazy">
+                    <figcaption>The final control rig and skinned character in Maya.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section class="trex-demo" aria-labelledby="demo-title">
+            <p class="trex-kicker">Final result</p>
+            <h2 id="demo-title">Rig demonstration</h2>
+            <p>See the finished character and custom controls in motion.</p>
+            <div class="trex-video-frame">
+                <iframe src="https://www.youtube.com/embed/AAZ7mqE5ux0?si=Wl-0m_oOBzelOGnt" title="T-Rex model, texture, and rig demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <a class="btn-portfolio" href="projects.html">Back to all projects</a>
+        </section>
+    </main>
+
+    <footer class="text-center"><p>&copy; 2026 Designed by Chris Pedraza. All rights reserved.</p></footer>
+    <script>
+        const navItems = document.querySelectorAll('.modern-nav-items li a');
+        const highlight = document.querySelector('.highlight');
+        const nav = document.querySelector('.modern-nav-items');
+        function moveHighlight(event) {
+            const linkRect = event.currentTarget.getBoundingClientRect();
+            const parentRect = nav.getBoundingClientRect();
+            highlight.style.width = `${linkRect.width}px`;
+            highlight.style.left = `${linkRect.left - parentRect.left}px`;
+        }
+        navItems.forEach(link => {
+            link.addEventListener('mouseenter', moveHighlight);
+            link.addEventListener('focus', moveHighlight);
+        });
+        nav.addEventListener('mouseleave', () => { highlight.style.width = '0'; });
+    </script>
+</body>
+</html>
