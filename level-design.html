@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Chris Pedraza's level design and game environments, including Battle Arena and Sweet Justice.">
+    <title>Level Design | Chris Pedraza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="modern-navbar" aria-label="Main navigation">
+        <ul class="modern-nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="level-design.html" aria-current="page">Level Design</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <span class="highlight" aria-hidden="true"></span>
+        </ul>
+    </nav>
+
+    <main id="content" class="level-design-page">
+        <header class="gallery-header">
+            <p class="gallery-eyebrow">Spaces made for play</p>
+            <h1>Level Design</h1>
+            <p class="gallery-intro">A closer look at the arenas and worlds in my games, from competitive spaces to stylized environments.</p>
+            <a class="btn-portfolio level-jump-link" href="#battle-arena">Explore the work</a>
+        </header>
+
+        <section class="level-showcase" aria-label="Featured level design work">
+            <article class="level-feature" id="battle-arena" aria-labelledby="arena-title">
+                <div class="level-feature-copy">
+                    <p class="gallery-eyebrow">01 / Competitive arena</p>
+                    <h2 id="arena-title">Battle Arena</h2>
+                    <div class="project-tags" aria-label="Project details">
+                        <span class="tag">Unity</span><span class="tag">Local Co-op</span><span class="tag">3D</span>
+                    </div>
+                    <p>My first 3D game and local co-op project. Two players start on opposing sides of an arena and compete to reach the other player's base to score points.</p>
+                    <p>Defending bots attack the opposing player as they try to reach the base. I created the arena in Unity, programmed the game mechanics in C#, and made the player and bot models and animations in Blender.</p>
+                    <dl class="level-facts">
+                        <div><dt>Player objective</dt><dd>Reach the opponent's base</dd></div>
+                        <div><dt>Challenge</dt><dd>Get past defending bots</dd></div>
+                        <div><dt>My contribution</dt><dd>Arena creation, gameplay programming, models &amp; animation</dd></div>
+                    </dl>
+                    <a class="trex-jump-link" href="projects.html#BA">View the game project &rarr;</a>
+                </div>
+                <figure class="level-media">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/6TBahn8cCns" title="Battle Arena gameplay showing the competitive arena" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption>See the arena and its gameplay in action.</figcaption>
+                </figure>
+            </article>
+
+            <article class="level-feature" aria-labelledby="sweet-title">
+                <div class="level-feature-copy">
+                    <p class="gallery-eyebrow">02 / A stylized world</p>
+                    <h2 id="sweet-title">Sweet Justice</h2>
+                    <div class="project-tags" aria-label="Project details">
+                        <span class="tag">Unity</span><span class="tag">3D Art</span><span class="tag">Work in Progress</span>
+                    </div>
+                    <p>An action/mystery game set in a vibrant, sugary-treat-themed world that's slowly slipping into chaos. Play as Officer Pinkglaze, a seasoned donut cop.</p>
+                    <p>This ongoing project brings together my Unity development, 3D modeling, animation, texturing, and gameplay design work.</p>
+                    <a class="trex-jump-link" href="projects.html#FE">View the game project &rarr;</a>
+                </div>
+                <figure class="level-media">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/w8qQGlJPMCM" title="Sweet Justice work-in-progress gameplay and game world" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption>A look inside the world of Sweet Justice. Development is ongoing.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Add future level case studies above with layouts, blockout images, and playtest notes. -->
+        <aside class="level-coming-soon" aria-labelledby="breakdowns-title">
+            <p class="gallery-eyebrow">More to come</p>
+            <h2 id="breakdowns-title">From layout to playable level</h2>
+            <p>Dedicated level breakdowns, blockout screenshots, and design notes will be added here as the portfolio grows.</p>
+            <a class="btn-portfolio" href="contact.html">Get in touch</a>
+        </aside>
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; 2026 Designed by Chris Pedraza. All rights reserved.</p>
+    </footer>
+    <script>
+        const nav = document.querySelector('.modern-nav-items');
+        const highlight = nav.querySelector('.highlight');
+        function moveHighlight(event) {
+            const linkRect = event.currentTarget.getBoundingClientRect();
+            const navRect = nav.getBoundingClientRect();
+            highlight.style.width = `${linkRect.width}px`;
+            highlight.style.left = `${linkRect.left - navRect.left}px`;
+        }
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', moveHighlight);
+            link.addEventListener('focus', moveHighlight);
+        });
+        nav.addEventListener('mouseleave', () => highlight.style.width = '0');
+        nav.addEventListener('focusout', event => {
+            if (!nav.contains(event.relatedTarget)) highlight.style.width = '0';
+        });
+    </script>
+</body>
+</html>
